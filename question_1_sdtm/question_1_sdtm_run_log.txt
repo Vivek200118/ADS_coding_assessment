@@ -1,0 +1,80 @@
+
+    >50 18 - 50 
+    305       1 
+# A tibble: 6 × 3
+  USUBJID     TRTSDTM             TRTSTMF
+  <chr>       <dttm>              <chr>  
+1 01-701-1015 2014-01-02 00:00:00 Y      
+2 01-701-1023 2012-08-05 00:00:00 Y      
+3 01-701-1028 2013-07-19 00:00:00 Y      
+4 01-701-1033 2014-03-18 00:00:00 Y      
+5 01-701-1034 2014-07-01 00:00:00 Y      
+6 01-701-1047 2013-02-12 00:00:00 Y      
+
+  N   Y 
+ 52 254 
+tibble [306 × 16] (S3: tbl_df/tbl/data.frame)
+ $ STUDYID : chr [1:306] "CDISCPILOT01" "CDISCPILOT01" "CDISCPILOT01" "CDISCPILOT01" ...
+  ..- attr(*, "label")= chr "Study Identifier"
+ $ USUBJID : chr [1:306] "01-701-1015" "01-701-1023" "01-701-1028" "01-701-1033" ...
+  ..- attr(*, "label")= chr "Unique Subject Identifier"
+ $ SUBJID  : chr [1:306] "1015" "1023" "1028" "1033" ...
+  ..- attr(*, "label")= chr "Subject Identifier for the Study"
+ $ SITEID  : chr [1:306] "701" "701" "701" "701" ...
+  ..- attr(*, "label")= chr "Study Site Identifier"
+ $ AGE     : num [1:306] 63 64 71 74 77 85 59 68 81 84 ...
+  ..- attr(*, "label")= chr "Age"
+ $ SEX     : chr [1:306] "F" "M" "M" "M" ...
+  ..- attr(*, "label")= chr "Sex"
+ $ ARM     : chr [1:306] "Placebo" "Placebo" "Xanomeline High Dose" "Xanomeline Low Dose" ...
+  ..- attr(*, "label")= chr "Description of Planned Arm"
+ $ ARMCD   : chr [1:306] "Pbo" "Pbo" "Xan_Hi" "Xan_Lo" ...
+  ..- attr(*, "label")= chr "Planned Arm Code"
+ $ RACE    : chr [1:306] "WHITE" "WHITE" "WHITE" "WHITE" ...
+  ..- attr(*, "label")= chr "Race"
+ $ COUNTRY : chr [1:306] "USA" "USA" "USA" "USA" ...
+  ..- attr(*, "label")= chr "Country"
+ $ AGEGR9  : chr [1:306] ">50" ">50" ">50" ">50" ...
+ $ AGEGR9N : num [1:306] 3 3 3 3 3 3 3 3 3 3 ...
+ $ TRTSDTM : POSIXct[1:306], format: "2014-01-02" "2012-08-05" "2013-07-19" ...
+ $ TRTSTMF : chr [1:306] "Y" "Y" "Y" "Y" ...
+ $ ITTFL   : chr [1:306] "Y" "Y" "Y" "Y" ...
+ $ LSTAVLDT: Date[1:306], format: "2014-07-02" "2013-02-18" "2014-01-14" ...
+ - attr(*, "label")= chr "Demographics"
+R version 4.4.1 (2024-06-14 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26100)
+
+Matrix products: default
+
+
+locale:
+[1] LC_COLLATE=English_United States.utf8  LC_CTYPE=English_United States.utf8   
+[3] LC_MONETARY=English_United States.utf8 LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.utf8    
+
+time zone: America/Indianapolis
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] binom_1.1-1.1         ggplot2_4.0.1         gt_1.3.0              gtsummary_2.5.0      
+ [5] lubridate_1.9.4       admiral_1.4.0         stringr_1.5.1         dplyr_1.1.4          
+ [9] pharmaverseadam_1.2.0 pharmaversesdtm_1.4.0 pharmaverseraw_0.1.1  sdtm.oak_0.2.0       
+
+loaded via a namespace (and not attached):
+ [1] sass_0.4.10        utf8_1.2.4         generics_0.1.4     tidyr_1.3.1       
+ [5] xml2_1.3.8         stringi_1.8.4      hms_1.1.3          digest_0.6.37     
+ [9] magrittr_2.0.3     evaluate_1.0.1     grid_4.4.1         timechange_0.3.0  
+[13] RColorBrewer_1.1-3 cards_0.7.1        fastmap_1.2.0      admiraldev_1.4.0  
+[17] purrr_1.1.0        fansi_1.0.6        scales_1.4.0       textshaping_1.0.1 
+[21] cli_3.6.5          crayon_1.5.3       rlang_1.1.7        litedown_0.9      
+[25] commonmark_2.0.0   withr_3.0.2        tools_4.4.1        vctrs_0.6.5       
+[29] R6_2.5.1           lifecycle_1.0.4    fs_1.6.5           ragg_1.4.0        
+[33] pkgconfig_2.0.3    pillar_1.9.0       gtable_0.3.6       glue_1.8.0        
+[37] systemfonts_1.2.3  xfun_0.56          tibble_3.2.1       tidyselect_1.2.1  
+[41] rstudioapi_0.17.1  knitr_1.50         farver_2.1.2       htmltools_0.5.8.1 
+[45] labeling_0.4.3     compiler_4.4.1     S7_0.2.1           roxygen2_7.3.3    
+[49] markdown_2.0      
